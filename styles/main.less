@@ -1,0 +1,77 @@
+@media only screen and (min-width: 0em) {
+    #products {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        font-size: 3vw;
+        gap: 1em;
+
+        .prod {
+            position: relative;
+            width: 48%;
+            max-width: 15em;
+            padding: 1em;
+            background-color: #f1f1f1;
+            box-shadow: var(--box-shadow-two);
+            // font-size: 3vw;
+
+
+            h3 {
+                font-size: 1.5em;
+                margin-bottom: 20/20em;
+            }
+
+            img {
+                display: block;
+                width: 80%;
+                height: auto;
+                margin: auto;
+                margin-bottom: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: blue;
+                width: auto;
+                position: absolute;
+                right: 1em;
+                bottom: 1em;
+                color: white;
+                width: 5em;
+                text-align: center;
+                height: 2em;
+                line-height: 2;
+                border-radius: 2em;
+                font-size: .9em;
+                transition: opacity 500ms;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #products {
+        font-size: 1.2vw;
+
+        #prod {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #products {
+        font-size: inherit;
+    }
+}
