@@ -40,7 +40,6 @@
   }
   body,
   html {
-    font-size: 15px;
     font-family: "Roboto", arial, sans-serif;
     overflow-x: hidden;
     height: 100%;
@@ -54,9 +53,14 @@
     font-weight: bold;
   }
 }
-@media only screen and (min-width: 1300px) {
+body {
+  font-size: 15px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 81.25em) {
   body {
     font-size: 20px;
+    /* desk 1300w */
   }
 }
 @media only screen and (min-width: 2000px) {

@@ -60,6 +60,63 @@
     }
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    border: 1px solid black;
+    max-width: 800/20em;
+
+    @media only screen and (max-width: 29.9375em) {
+        font-size: 3.2vw;
+        /* mintab opt-out 480oo */
+    }
+
+    @media only screen and (min-width: 30em) {
+        font-size: 1.7vw;
+        /* mintab 480w */
+    }
+
+    @media only screen and (min-width: 61.25em) {
+        font-size: inherit;
+        /* custom opt-out 979oo */
+    }
+
+    h2 {
+        font-size: 40/20em;
+        margin-bottom: 20/40em;
+    }
+
+    p {
+        font-size: 20/20em;
+        display: inline-block;
+
+        a {
+            color: maroon;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: inline-block;
+            // text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            margin-left: 5/20em;
+            margin-bottom: 3/20em;
+
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 18/20em;
+                height: 18/20em;
+                margin-bottom: 3/20em;
+            }
+        }
+    }
+}
+
+
 @media only screen and (min-width: 768px) {
     #products {
         font-size: 1.5vw;
